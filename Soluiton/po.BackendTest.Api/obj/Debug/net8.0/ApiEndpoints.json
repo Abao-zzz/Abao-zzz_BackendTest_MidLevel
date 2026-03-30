@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "po.BackendTest.Api.Controllers.MyofficeAcpdController",
+    "Method": "GetAll",
+    "RelativePath": "api/MyofficeAcpd",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "po.BackendTest.Api.Controllers.MyofficeAcpdController",
+    "Method": "Index",
+    "RelativePath": "api/MyofficeAcpd",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,276 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "po.BackendTest.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/MyOfficeAcpd/ping-db": {
+      "get": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/MyOfficeAcpd": {
+      "get": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MyOfficeAcpd"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MyOfficeAcpd"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MyOfficeAcpd"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MyOfficeAcpd/{id}": {
+      "get": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MyOfficeAcpd"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MyOfficeAcpd"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "MyOfficeAcpd"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "MyOfficeAcpd": {
+        "type": "object",
+        "properties": {
+          "acpdSid": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdCname": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdEname": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdSname": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdStatus": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "acpdStop": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "acpdStopMemo": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdLoginId": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdLoginPwd": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdMemo": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdNowDateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "acpdNowId": {
+            "type": "string",
+            "nullable": true
+          },
+          "acpdUpddateTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "acpdUpdid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
